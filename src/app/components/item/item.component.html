@@ -4,6 +4,7 @@
   name="comprado"
   id="comprado"
   [checked]="item.comprado"
+  (change)="checarItem()"
 >
 <p class="description">{{item.nome}}</p>
 <div class="d-contents" *ngIf="!item.comprado">
